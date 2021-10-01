@@ -12,14 +12,14 @@ body {
 .nav-container {
   background: #fffffa;
   box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1);
-  height: 72px;
-  margin-top: -65px;
+  height: 10vh;
+  margin-top: -10vh;
   z-index: 500;
   position: relative;
 }
 
 .wrapper {
-  width: 1200px;
+  width: 85vw;
   margin: 0 auto;
 }
 
@@ -27,7 +27,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 72px;
+  height: 10vh;
 }
 
 nav ul {
@@ -38,13 +38,13 @@ nav .logo {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 800;
-  font-size: 64px;
+  font-size: 7vh;
   color: #021718;
 }
 
 .nav-items li {
   list-style: none;
-  margin-right: 100px;
+  margin-right: 5vw;
 }
 
 .nav-items li:nth-last-of-type(1) {
@@ -53,7 +53,7 @@ nav .logo {
 
 .nav-items li a {
   color: #021718;
-  font-size: 24px;
+  font-size: 3vh;
   font-family: "Poppins", sans-serif;
   text-decoration: none;
 }
@@ -78,19 +78,19 @@ header {
 
 header h1 {
   font-weight: 900;
-  font-size: 64px;
-  line-height: 75px;
+  font-size: 10vh;
+  line-height: 10vh;
   color: #021718;
-  margin-bottom: 24px;
+  margin-bottom: 5vh;
 }
 
 header p {
-  font-size: 24px;
+  font-size: 5vh;
   line-height: 42px;
   color: #021718;
-  width: 418px;
+  width: 50vw;
 
-  margin-bottom: 48px;
+  margin-bottom: 5vh;
 }
 
 header a {
@@ -130,26 +130,77 @@ header .hero-image {
   position: relative;
 }
 
-header .hero-image img {
-  transition: 300ms;
-  position: relative;
-  z-index: 100;
+
+
+header .hero-image:hover {
+  transform: rotate(-6deg);
+}
+header .hero-image .photo-bg-anchor:hover {
+  transform: rotate(-12deg);
+}
+header .hero-image .photo-bg-top:hover {
+  transform: rotate(-24deg);
+}
+header .hero-image .photo-bg:hover {
+  transform: rotate(-36deg);
+}
+header .hero-image .photo-bg-bottom:hover {
+  transform: rotate(-48deg);
 }
 
-header .hero-image img:hover {
-  transform: rotate(-6deg);
+
+
+header .hero-image .photo-bg-anchor {
+  transition: 1000ms;
+  position: relative;
+  z-index: 100;
+  width: 45vh;
+  height: 45vh;
+  left: -16vw;
+  top: 0vh;
+  
+
+  background: #270000;
+  transform: rotate(24deg);
+}
+
+header .hero-image .photo-bg-top {
+  transition: 1100ms;
+  position: absolute;
+  width: 45vh;
+  height: 45vh;
+  left: -16vw;
+  top: 0vh;
+  z-index: 50;
+
+  background: #a8a8a8;
+  transform: rotate(12deg);
 }
 
 header .hero-image .photo-bg {
+  transition: 1200ms;
   position: absolute;
-  width: 500px;
-  height: 500px;
-  left: 45px;
-  top: 24px;
+  width: 45vh;
+  height: 45vh;
+  left: -16vw;
+  top: 0vh;
 
   background: #44a1a0;
   transform: rotate(-6deg);
 }
+header .hero-image .photo-bg-bottom {
+  transition: 1300ms;
+  position: absolute;
+  width: 45vh;
+  height: 45vh;
+  left: -16vw;
+  top: 0vh;
+
+  background: #002928;
+  transform: rotate(-24deg);
+}
+
+
 
 /* Search Box */
 
