@@ -12,7 +12,7 @@ body {
 .nav-container {
   background: #fffffa;
   box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1);
-  height: 10vh;
+  height: 20vh;
   margin-top: -10vh;
   z-index: 500;
   position: relative;
@@ -27,7 +27,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 10vh;
+  height: 30vh;
 }
 
 nav ul {
@@ -64,7 +64,7 @@ nav .logo {
   background: url("../images/double-bubble-dark.png");
   background-repeat: no-repeat;
   background-position: right;
-  background-size: contain;
+  background-size: 50vw;
   height: calc(100vh - 72px);
   display: flex;
   align-items: center;
@@ -78,15 +78,15 @@ header {
 
 header h1 {
   font-weight: 900;
-  font-size: 10vh;
-  line-height: 10vh;
+  font-size: 4em;
+  line-height: 1em;
   color: #021718;
   margin-bottom: 5vh;
 }
 
 header p {
-  font-size: 5vh;
-  line-height: 42px;
+  font-size: 2em;
+  line-height: 1em;
   color: #021718;
   width: 50vw;
 
@@ -95,12 +95,12 @@ header p {
 
 header a {
   color: #fffffa;
-  font-size: 24px;
+  font-size: 1.5em;
   text-decoration: none;
 
   background: #01847f;
   border-radius: 8px;
-  padding: 12px 48px;
+  padding: 1.5vh 3vw;
   display: inline-block;
   transition: 300ms;
 }
@@ -109,15 +109,56 @@ header a:hover {
   transform: translateY(-8px);
 }
 
+/* Body */
+
+.body-container {
+  
+  
+  background: url("../images/double-bubble-dark.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 50vw;
+  height: calc(100vh - 72px);
+  display: flex;
+  align-items: center;
+
+}
+
+.body-container h1 {
+  font-weight: 900;
+  font-size: 4em;
+  line-height: 1em;
+  color: #021718;
+  margin-bottom: 5vh;
+}
+
+.body-container p {
+  font-size: 2em;
+  line-height: 1em;
+  color: #021718;
+  width: 50vw;
+
+  margin-bottom: 5vh;
+}
+
+/* Portfolio */
+
+
+
 /* Social Icons */
 
 .social-icons {
   display: flex;
   align-items: center;
+ 
+}
+
+.social-icons img {
+  width: 3vw;
 }
 
 .social-icons a {
-  margin: 0 24px;
+  margin: 0 0vw;
 }
 
 .social-icons a:nth-of-type(1) {
@@ -128,9 +169,8 @@ header a:hover {
 
 header .hero-image {
   position: relative;
+  left: -17vw;
 }
-
-
 
 header .hero-image:hover {
   transform: rotate(-6deg);
@@ -148,15 +188,13 @@ header .hero-image .photo-bg-bottom:hover {
   transform: rotate(-48deg);
 }
 
-
-
 header .hero-image .photo-bg-anchor {
   transition: 1000ms;
   position: relative;
   z-index: 100;
-  width: 45vh;
-  height: 45vh;
-  left: -16vw;
+  width: 20vw;
+  height: 20vw;
+  
   top: 0vh;
   
 
@@ -167,9 +205,9 @@ header .hero-image .photo-bg-anchor {
 header .hero-image .photo-bg-top {
   transition: 1100ms;
   position: absolute;
-  width: 45vh;
-  height: 45vh;
-  left: -16vw;
+  width: 20vw;
+  height: 20vw;
+  
   top: 0vh;
   z-index: 50;
 
@@ -180,9 +218,9 @@ header .hero-image .photo-bg-top {
 header .hero-image .photo-bg {
   transition: 1200ms;
   position: absolute;
-  width: 45vh;
-  height: 45vh;
-  left: -16vw;
+  width: 20vw;
+  height: 20vw;
+  
   top: 0vh;
 
   background: #44a1a0;
@@ -191,47 +229,13 @@ header .hero-image .photo-bg {
 header .hero-image .photo-bg-bottom {
   transition: 1300ms;
   position: absolute;
-  width: 45vh;
-  height: 45vh;
-  left: -16vw;
+  width: 20vw;
+  height: 20vw;
+  
   top: 0vh;
 
   background: #002928;
   transform: rotate(-24deg);
-}
-
-
-
-/* Search Box */
-
-.search-box {
-  width: 1200px;
-  margin: 0 auto;
-  text-align: right;
-  position: relative;
-  top: 0;
-  z-index: 101;
-
-  transition: 300ms;
-}
-
-.search-box.active {
-  top: 72px;
-}
-
-.search-box input {
-  background: #fffffa;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
-  border-radius: 0px 0px 8px 8px;
-
-  font-size: 24px;
-  line-height: 42px;
-  border: 0;
-  padding: 12px 48px;
-}
-
-.search-box input::placeholder {
-  color: #b3b3b3;
 }
 
 /* Search & Close Buttons */
@@ -269,10 +273,6 @@ header .hero-image .photo-bg-bottom {
   transform: translateY(0);
 }
 
-/* Hidden Items */
 
-.search-box {
-  /* display: none; */
-}
 
   
