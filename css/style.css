@@ -61,13 +61,17 @@ nav .logo {
 /* Header */
 
 .header-container {
+  height: 100vh;
   background: url("../images/double-bubble-dark.png");
   background-repeat: no-repeat;
   background-position: right;
-  background-size: 50vw;
-  height: calc(100vh - 72px);
+  background-size: 50%;
+  
+ 
   display: flex;
   align-items: center;
+  
+
 }
 
 header {
@@ -113,12 +117,10 @@ header a:hover {
 
 .body-container {
   
-  
   background: url("../images/double-bubble-dark.png");
   background-repeat: no-repeat;
   background-position: right;
-  background-size: 50vw;
-  height: calc(100vh - 72px);
+  
   display: flex;
   align-items: center;
 
